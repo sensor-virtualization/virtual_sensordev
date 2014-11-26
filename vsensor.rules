@@ -1,0 +1,1 @@
+KERNEL=="vsensor", SYMLINK+="virtual_sensor", MODE="0666"

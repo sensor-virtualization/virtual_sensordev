@@ -1,0 +1,10 @@
+[Unit]
+Description=Load virtual sensor device driver kernel module
+Before=remote-sensor-framework.service
+
+[Service]
+ExecStart=/sbin/insmod /data/virtual_sensordev.ko
+Type=oneshot
+
+[Install]
+WantedBy=graphical.target
