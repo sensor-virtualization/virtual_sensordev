@@ -6,6 +6,7 @@
 
 #define STRING_SIZE 	64
 static char sdata[STRING_SIZE] = "0 0 0";
+static DEFINE_MUTEX(llock);
 
 static int vsensor_open(struct inode *inode, struct file *file)
 {
@@ -32,7 +33,10 @@ static ssize_t vsensor_write(struct file *file, const char __user *buf, size_t l
     }
 
     /*copy user data*/
+    mutex_lock(&llock);
+    sdata[0]='\0';
     error = copy_from_user(sdata, buf, len);
+    mutex_unlock(&llock);
     printk("Vsensor Write : data string is %s \n",sdata);
     if (error)
     {
@@ -56,7 +60,10 @@ static ssize_t vsensor_read(struct file *file, const char __user *buf, size_t le
 
     printk("Vsensor Read : len is %d bytes\n",len);
     /* copy sensor data to user buffer */
+    mutex_lock(&llock);
     error = copy_to_user((char *)buf, sdata, length);
+    //memcpy((char *)buf, sdata, 64);
+    mutex_unlock(&llock);
     printk("Vsensor Read : data string is %s \n",buf);
     if (error)
     {
@@ -90,7 +97,8 @@ static int __init vsensor_init(void)
         printk("can't misc_register \n");
         return error;
     }
- 
+    
+    mutex_init(&llock); 
     printk("I'm in\n");
     return 0;
 }

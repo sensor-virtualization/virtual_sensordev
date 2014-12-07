@@ -1,0 +1,75 @@
+arc = 1, optind = 1 ,Kb 0, rotate 4
+--------- beginning of /dev/log_main
+D/REMOTE_KEY_FW( 3152): main.cpp: main(281) > Sever started
+E/REMOTE_KEY_FW( 3152): main.cpp: rsf_initialize_bluetooth(62) > [rsf_initialize_bluetooth] bt_adapter_state_changed_cb will be called.
+E/Tizen::Base::Runtime( 3285): static Tizen::Base::Runtime::_EventManager* Tizen::Base::Runtime::_EventManager::GetCurrentEventManager()(292) > [E_OBJ_NOT_FOUND] This is not OSP thread.
+E/Tizen::Base::Runtime( 3273): static Tizen::Base::Runtime::_EventManager* Tizen::Base::Runtime::_EventManager::GetCurrentEventManager()(292) > [E_OBJ_NOT_FOUND] This is not OSP thread.
+E/Tizen::Base::Runtime( 3273): result Tizen::Base::Runtime::_Event::Initialize()(207) > [E_INVALID_OPERATION] Event manager does not exist.
+E/Tizen::Base::Runtime( 3285): result Tizen::Base::Runtime::_Event::Initialize()(207) > [E_INVALID_OPERATION] Event manager does not exist.
+D/REMOTE_KEY_FW( 3152): main.cpp: rsf_state_changed_cb(252) > RemoteKeyFW: bluetooth was enabled successfully.
+D/REMOTE_KEY_FW( 3152): main.cpp: rsf_state_changed_cb(260) > It will terminate gMainLoop.
+D/REMOTE_KEY_FW( 3152): main.cpp: main(298) > succeed in rsf_initialize_bluetooth()
+D/REMOTE_KEY_FW( 3152): main.cpp: rsf_listen_connection(172) > listen successful
+E/Tizen::Base::Runtime( 3829): static Tizen::Base::Runtime::_EventManager* Tizen::Base::Runtime::_EventManager::GetCurrentEventManager()(292) > [E_OBJ_NOT_FOUND] This is not OSP thread.
+E/Tizen::Base::Runtime( 3829): result Tizen::Base::Runtime::_Event::Initialize()(207) > [E_INVALID_OPERATION] Event manager does not exist.
+I/osp-app-service( 3829): int OspMain(int, char**)(36) > Application started.
+E/Tizen::Io( 3829): result Tizen::Io::_IpcClient::MakeConnection(bool)(205) > [E_SYSTEM] Failed to connect to server(/var/run/osp/osp.sys.ipcserver.setting_service) : No such file or directory
+E/Tizen::Io( 3829): result Tizen::Io::_IpcClient::Construct(const Tizen::Base::String&, const Tizen::Io::_IIpcClientEventListener*)(103) > [E_SYSTEM] Failed to connect to server.
+E/Tizen::System( 3829): result Tizen::System::_SettingClient::Construct()(248) > [E_SYSTEM] It is failed to construct IPC client.
+E/Tizen::System( 3829): static void Tizen::System::_SettingClient::InitSettingClient()(179) > It is failed to create SettingClient by [E_SYSTEM].
+E/Tizen::System( 3829): static result Tizen::System::_SettingInfoImpl::AddSettingEventListenerForInternal(Tizen::System::ISettingEventListener&)(373) > [E_SYSTEM] It is failed to intialize setting manager
+E/Tizen::Base::Runtime( 3846): static Tizen::Base::Runtime::_EventManager* Tizen::Base::Runtime::_EventManager::GetCurrentEventManager()(292) > [E_OBJ_NOT_FOUND] This is not OSP thread.
+E/Tizen::Base::Runtime( 3846): result Tizen::Base::Runtime::_Event::Initialize()(207) > [E_INVALID_OPERATION] Event manager does not exist.
+E/Tizen::Base::Runtime( 3845): static Tizen::Base::Runtime::_EventManager* Tizen::Base::Runtime::_EventManager::GetCurrentEventManager()(292) > [E_OBJ_NOT_FOUND] This is not OSP thread.
+E/Tizen::Base::Runtime( 3845): result Tizen::Base::Runtime::_Event::Initialize()(207) > [E_INVALID_OPERATION] Event manager does not exist.
+E/Tizen::Base::Runtime( 3847): static Tizen::Base::Runtime::_EventManager* Tizen::Base::Runtime::_EventManager::GetCurrentEventManager()(292) > [E_OBJ_NOT_FOUND] This is not OSP thread.
+E/Tizen::Base::Runtime( 3847): result Tizen::Base::Runtime::_Event::Initialize()(207) > [E_INVALID_OPERATION] Event manager does not exist.
+I/osp-common-service( 3847): int OspMain(int, char**)(38) > Application started.
+I/osp-security-service( 3845): int OspMain(int, char**)(54) > Application started.
+I/osp-channel-service( 3846): int OspMain(int, char**)(35) > Application started.
+E/Tizen::Io( 3847): result Tizen::Io::_IpcClient::MakeConnection(bool)(205) > [E_SYSTEM] Failed to connect to server(/var/run/osp/osp.sys.ipcserver.setting_service) : No such file or directory
+E/Tizen::Io( 3847): result Tizen::Io::_IpcClient::Construct(const Tizen::Base::String&, const Tizen::Io::_IIpcClientEventListener*)(103) > [E_SYSTEM] Failed to connect to server.
+E/Tizen::System( 3847): result Tizen::System::_SettingClient::Construct()(248) > [E_SYSTEM] It is failed to construct IPC client.
+E/Tizen::System( 3847): static void Tizen::System::_SettingClient::InitSettingClient()(179) > It is failed to create SettingClient by [E_SYSTEM].
+E/Tizen::System( 3847): static result Tizen::System::_SettingInfoImpl::AddSettingEventListenerForInternal(Tizen::System::ISettingEventListener&)(373) > [E_SYSTEM] It is failed to intialize setting manager
+E/Tizen::System( 3847): void CommonService::InitializeServices()(101) > Setting done
+E/Tizen::System( 3847): void CommonService::InitializeServices()(103) > Runtime done
+E/Tizen::System( 3847): void CommonService::InitializeServices()(105) > Device done
+E/Tizen::System( 3847): void CommonService::InitializeServices()(107) > Power done
+E/Tizen::System( 3847): void CommonService::InitializeServices()(116) > UI done
+E/Tizen::System( 3847): void CommonService::InitializeServices()(123) > Message done
+E/Tizen::System( 3847): void CommonService::InitializeServices()(126) > System done
+E/Tizen::System( 3847): void CommonService::InitializeServices()(129) > AlarmEx done
+E/Tizen::Io( 3845): result Tizen::Io::_IpcClient::MakeConnection(bool)(205) > [E_SYSTEM] Failed to connect to server(/var/run/osp/osp.sys.ipcserver.setting_service) : No such file or directory
+E/Tizen::Io( 3845): result Tizen::Io::_IpcClient::Construct(const Tizen::Base::String&, const Tizen::Io::_IIpcClientEventListener*)(103) > [E_SYSTEM] Failed to connect to server.
+E/Tizen::System( 3845): result Tizen::System::_SettingClient::Construct()(248) > [E_SYSTEM] It is failed to construct IPC client.
+E/Tizen::Io( 3846): result Tizen::Io::_IpcClient::MakeConnection(bool)(205) > [E_SYSTEM] Failed to connect to server(/var/run/osp/osp.sys.ipcserver.setting_service) : No such file or directory
+E/Tizen::System( 3845): static void Tizen::System::_SettingClient::InitSettingClient()(179) > It is failed to create SettingClient by [E_SYSTEM].
+E/Tizen::System( 3845): static result Tizen::System::_SettingInfoImpl::AddSettingEventListenerForInternal(Tizen::System::ISettingEventListener&)(373) > [E_SYSTEM] It is failed to intialize setting manager
+E/Tizen::Io( 3846): result Tizen::Io::_IpcClient::Construct(const Tizen::Base::String&, const Tizen::Io::_IIpcClientEventListener*)(103) > [E_SYSTEM] Failed to connect to server.
+E/Tizen::System( 3846): result Tizen::System::_SettingClient::Construct()(248) > [E_SYSTEM] It is failed to construct IPC client.
+E/Tizen::System( 3846): static void Tizen::System::_SettingClient::InitSettingClient()(179) > It is failed to create SettingClient by [E_SYSTEM].
+E/Tizen::System( 3846): static result Tizen::System::_SettingInfoImpl::AddSettingEventListenerForInternal(Tizen::System::ISettingEventListener&)(373) > [E_SYSTEM] It is failed to intialize setting manager
+I/osp-security-service( 3845): virtual bool SecurityService::OnAppInitializing(Tizen::App::AppRegistry&)(82) > Enter
+I/osp-security-service( 3845): result PrivilegeService::Construct()(62) > Entered.
+I/osp-security-service( 3845): result PrivilegeService::Construct()(70) > Leaved.
+I/osp-security-service( 3845): virtual bool SecurityService::OnAppInitializing(Tizen::App::AppRegistry&)(102) > Channel IPC Server init started... VCONF_APPSERVICE_STATUS = 0
+I/osp-security-service( 3845): virtual bool SecurityService::OnAppInitializing(Tizen::App::AppRegistry&)(118) > Channel Service has not been launched. Wait for launching channel service.
+I/osp-security-service( 3845): virtual bool SecurityService::OnAppInitializing(Tizen::App::AppRegistry&)(123) > Exit
+I/osp-security-service( 3845): virtual bool SecurityService::OnAppInitialized()(141) > Enter
+I/osp-security-service( 3845): virtual bool SecurityService::OnAppInitialized()(150) > Exit
+E/Tizen::App( 3829): static result Tizen::App::_ConditionDatabaseHelper::GetAllSectionsFromConditionDb(Tizen::Base::Collection::ArrayList*)(639) > [E_SUCCESS] No record exists in database.
+I/osp-security-service( 3845): static void SecurityService::OnChannelServiceLaunched(keynode_t*, void*)(199) > OnChannelServiceLaunched started. - vconf changed.
+I/osp-security-service( 3845): static void SecurityService::OnChannelServiceLaunched(keynode_t*, void*)(208) > Channel Service launched. DRM IPC Server will be started.
+I/osp-security-service( 3845): result DrmService::Construct()(102) > DrmService::Construct is called.
+I/osp-security-service( 3845): result DrmService::Construct()(107) > DrmService::RequestLocalMessagePort successfully called.
+I/osp-security-service( 3845): result DrmService::Construct()(112) > DrmService : LocalMessagePort is ready.
+I/osp-security-service( 3845): static DrmService* DrmService::GetInstance()(79) > DrmService : m_pInstance is created.
+I/osp-security-service( 3845): static void SecurityService::OnChannelServiceLaunched(keynode_t*, void*)(213) > DRM IPC Server succesfully launched.
+E/Tizen::Base::Runtime( 3917): static Tizen::Base::Runtime::_EventManager* Tizen::Base::Runtime::_EventManager::GetCurrentEventManager()(292) > [E_OBJ_NOT_FOUND] This is not OSP thread.
+E/Tizen::Base::Runtime( 3917): result Tizen::Base::Runtime::_Event::Initialize()(207) > [E_INVALID_OPERATION] Event manager does not exist.
+E/osp-app-service( 3829): result Tizen::Base::Collection::__LinkedListEnumeratorT<Type>::MoveNext() [with Type = Tizen::Base::Runtime::_Event::_ListenerInfo, result = long unsigned int](1466) > [E_INVALID_OPERATION] The source collection is modified after the creation of this enumerator.
+E/Tizen::Net::Nfc( 3917): result NfcService::Construct()(77) > [E_UNSUPPORTED_OPERATION] NFC is not supported.
+E/Tizen::Net::Nfc( 3917): result NfcConnectivityIpcStub::Construct()(67) > [E_UNSUPPORTED_OPERATION] Failed to construct NfcService.
+E/Tizen::Io( 3847): result Tizen::Io::Registry::GetValue(const Tizen::Base::String&, const Tizen::Base::String&, int&) const(278) > [E_INVALID_ARG] entryName.GetLength() <= 0
+E/Tizen::System( 3847): static result Tizen::System::_PowerManager::ChangeBrightness(int)(48) > [E_SYSTEM] It failed to get the device max brightness

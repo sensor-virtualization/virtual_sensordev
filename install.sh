@@ -24,5 +24,6 @@ sdb push ${RULE_FILE} /etc/udev/${RULE_FILE}
 sdb shell rm -f /etc/udev/rules.d/010_${RULE_FILE}
 sdb shell ln -s /etc/udev/${RULE_FILE} /etc/udev/rules.d/010_${RULE_FILE} 
 sdb push ${SERVICE_FILE} ${PATH_SYSTEMD}/system/
-sdb shell ln -s ${PATH_SYSTEMD}/system/${SERVICE_FILE} ${PATH_SYSTEMD}/system/graphical.target.wants/${SERVICE_FILE}
+#sdb shell ln -s ${PATH_SYSTEMD}/system/${SERVICE_FILE} ${PATH_SYSTEMD}/system/graphical.target.wants/${SERVICE_FILE}
+sdb shell ln -s ${PATH_SYSTEMD}/system/${SERVICE_FILE} ${PATH_SYSTEMD}/system/multi-user.target.wants/${SERVICE_FILE}
 echo "Install completed. Reboot target device to use this module."
